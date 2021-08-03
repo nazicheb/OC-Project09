@@ -1,0 +1,18 @@
+<aura:component controller="MyTeamOrdersController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute name="orderList" type="Order[]" />
+    <aura:attribute name="mycolumns" type="List"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    
+    <lightning:card  title="List Of Orders per Commercial">  
+      <p class="slds-p-horizontal_small">  
+          <lightning:datatable data="{! v.orderList }"
+                         columns="{! v.mycolumns }"
+                         keyField="id"
+                         hideCheckboxColumn="true"
+                         />
+      </p>  
+   </lightning:card> 
+</aura:component>
+
