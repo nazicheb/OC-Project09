@@ -1,5 +1,5 @@
 @isTest
-public class class Batch02AccountChiffreAffaireTest {
+public class Batch02AccountChiffreAffaireTest {
     @testSetup
     static void setup() {
         List<Account> accounts = new List<Account>();
