@@ -1,5 +1,5 @@
 @isTest
-public class Batch02AccountChiffreAffaireSchedulablerTest {
+public class Batch02AccountSchedulablerTest {
 
     @testSetup
     static void setup() {
