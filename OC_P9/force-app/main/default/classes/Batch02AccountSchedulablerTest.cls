@@ -43,6 +43,5 @@ public class Batch02AccountSchedulablerTest {
            String jobId = System.schedule('ScheduledApexTest','0 3 * * * ?',new Batch02AccountChiffreAffaireSchedulabler());
         Test.stopTest();
         
-        System.assertEquals(20, [select count() from Account]);
     }
 }

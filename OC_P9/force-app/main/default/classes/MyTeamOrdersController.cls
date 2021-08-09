@@ -23,7 +23,7 @@ public without sharing class MyTeamOrdersController {
     {
         //Fetch orders that exists in organization 
         List<Order> ordList=new List<Order>();
-        ordList=[Select Id,OrderNumber,Account.Name,OwnerId,Owner.Name,ShipmentCost__c,Status
+        ordList=[Select Id,OrderNumber,Account.Name,OwnerId,Owner.Name,TotalAmount,Status
                  From Order];
         
         return ordList;
