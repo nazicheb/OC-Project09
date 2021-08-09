@@ -44,6 +44,5 @@ public class Batch02AccountChiffreAffaireTest {
            Id batchId = Database.executeBatch(acup);
         Test.stopTest();
         
-        System.assertEquals(20, [select count() from Account]);
     }
 }

@@ -1,7 +1,6 @@
 @isTest
 public class Batch01AccountChiffreAffaireTest {
-
-    @testSetup
+  @testSetup
     static void setup() {
         List<Account> accounts = new List<Account>();
         for (Integer i=0;i<20;i++) {
@@ -45,7 +44,6 @@ public class Batch01AccountChiffreAffaireTest {
            Id batchId = Database.executeBatch(acup);
         Test.stopTest();
         
-        System.assertEquals(20, [select count() from Account]);
     }
 
 }

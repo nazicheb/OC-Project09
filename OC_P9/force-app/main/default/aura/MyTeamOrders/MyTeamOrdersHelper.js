@@ -12,9 +12,8 @@
                  if (results.hasOwnProperty(key)) {
                      if(row.OwnerName==key)
                      {
-                         row.TotalAmount=results[key];
-                         console.log(results[key]);
-                         console.log(row.TotalAmount);
+                         row.Total=results[key];
+                         
                      }
                  }
                 }
